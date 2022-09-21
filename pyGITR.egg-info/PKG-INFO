@@ -1,0 +1,38 @@
+Metadata-Version: 2.1
+Name: pyGITR
+Version: 0.0.0
+Summary: Toolbox for GITR
+Author: J. Guterl
+Author-email: guterlj@fusion.gat.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Topic :: Software Development
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3 :: Only
+Requires-Python: >=3.5, <4
+Description-Content-Type: text/markdown
+
+# Workflow of pyGITR
+
+## make_geom.py
+Define the geometry and mesh of the simulation.
+
+## setup_geom.py
+Converts the geometry mesh to gitrGeom.cfg. Many plot-checks, such as inDir, centroids, norms...
+
+## make_particle_source.py
+Define the particle source. Currently, this is static. Eventually want to make this a function of impinging flux (such as C flux).
+
+## input.py
+Script that makes gitrInput.cfg. Set physics and simulation options here.
+
+## setup.py
+Script that runs all of the above
+
+
+
